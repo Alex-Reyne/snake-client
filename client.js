@@ -14,6 +14,10 @@ const connect = function () {
     console.log('data: ', data);
   });
 
+  conn.on('connect', () => {
+    conn.write('Name: ALR');
+  });
+
   conn.setEncoding("utf8");
 
   return conn;
