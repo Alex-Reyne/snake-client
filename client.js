@@ -18,6 +18,11 @@ const connect = function () {
     conn.write('Name: ALR');
   });
 
+  // conn.on('connect', () => {
+  //   conn.write('Move: up');
+  //   setInterval(() => conn.write('Move: up'), 100)
+  // });
+  
   conn.setEncoding("utf8");
 
   return conn;
